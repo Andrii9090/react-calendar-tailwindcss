@@ -36,19 +36,22 @@ export const Calendar: FC<CalendarProps> = ({
 
     return (
         <div className="flex flex-col w-full">
-            <div className="flex">
+            <div className="flex p-3 justify-between items-center w-4/12">
                 <button
-                    className="border"
+                    className="border p-2 rounded-md hover:bg-slate-200 transition-colors"
                     onClick={() => {
                         setNewDate(-1)
                     }}
                 >
                     &#x276E;
                 </button>
-                <span className="text-gray-800">
+                <span className="text-gray-600">
                     {getMonthNameFromDate(date, locale)}, {date.getFullYear()}
                 </span>
-                <button className="border" onClick={() => setNewDate(1)}>
+                <button
+                    className="border p-2 rounded-md hover:bg-slate-200 transition-colors"
+                    onClick={() => setNewDate(1)}
+                >
                     &#x276F;
                 </button>
             </div>
