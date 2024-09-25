@@ -1,3 +1,8 @@
+type CalendarParams = {
+    locale?: string
+    date?: Date
+    startWeekDay?: StartWeekDay
+}
 
 type CalendarProps = {
     dateInit?: Date

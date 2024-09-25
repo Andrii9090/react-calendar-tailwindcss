@@ -1,9 +1,3 @@
-interface CalendarParams {
-    locale?: string
-    date?: Date
-    startWeekDay?: StartWeekDay
-}
-
 const getWeekNumber = (date: Date, startWeekDay: StartWeekDay = 'monday') => {
     const firstDayOfYear = new Date(date.getFullYear(), 0, 1)
     const start = startWeekDay == 'monday' ? 1 : 2
